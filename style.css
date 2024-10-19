@@ -1,0 +1,252 @@
+/*--Global Styles--*/ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    height: 100%;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*--Header Section--*/
+header {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/fc/Karl%C5%AFv_most.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header .subheading {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #f4f4f4;
+}
+
+blockquote {
+    background: rgba(0, 0, 0, 0.7);
+    border-left: 5px solid #808080;
+    padding: 20px;
+    font-size: 1.5em;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.quote {
+    font-style: italic;
+}
+
+#name {
+    text-align: right;
+    color: #808080;
+}
+
+/*--Introduction Section--*/
+#intro {
+    padding: 60px 0;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.intro-text h1 {
+    color: #005757;
+    font-weight: 200;
+}
+
+.intro-text h3 {
+    font-size: 1.5em;
+    font-weight: 200;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.intro-text p {
+    line-height: 1.6;
+    color: #333;
+}
+
+.intro-image {
+    flex: 0 0 300px; /* Sets a fixed width for the image */
+}
+
+.intro-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0; /* Removes the circular shape */
+}
+
+@media (max-width: 768px) {
+    .intro-content {
+        flex-direction: column;
+    }
+
+    .intro-text {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .intro-image {
+        margin-top: 20px;
+    }
+}
+
+/*--Timeline Section--*/
+#timeline {
+    padding: 40px 0;
+    background: #f4f4f4;
+}
+
+#timeline ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#timeline li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#row {
+    padding: 60px 0;
+}
+
+.timeline {
+    max-width: 800px;
+    margin: auto;
+}
+
+.timeline-event {
+    margin: 20px 0;
+    padding: 10px;
+    background: rgba(240, 240, 240, 0.8);
+    border-radius: 8px;
+}
+
+.timeline-event h3 {
+    font-size: 1.5em;
+    color: #008080; /* Changed to teal */
+}
+
+.timeline-event p {
+    margin: 5px 0;
+    color: #333;
+}
+
+
+/*--Books Section--*/
+#books {
+    padding: 60px 0;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/3/34/Vltava_River_in_Prague.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#books h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3em;
+}
+
+#books h2 {
+    text-align: center;
+    color: #008080;
+    font-size: 3em;
+    font-weight: 200;
+    margin-bottom: 1em;
+}
+
+#books p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 2em;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.3s; /* Added transition for hover effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.b-title {
+    font-size: 1.3em;
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 0.9em;
+}
+
+.button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #808080;
+}
+
+/*--Footer--*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+footer p {
+    font-size: 0.9em;
+}
